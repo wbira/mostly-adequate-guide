@@ -12,6 +12,7 @@ function inspectFn(f) {
 }
 
 function inspectArgs(args) {
+  console.log(args)
   return args.reduce(function(acc, x){
     return acc += inspect(x);
   }, '(') + ')';
